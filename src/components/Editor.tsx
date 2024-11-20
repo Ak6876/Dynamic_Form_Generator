@@ -18,7 +18,7 @@ const Editor: React.FC = () => {
   return (
     <div className="w-full px-4 py-2 flex gap-1 flex-col md:flex-row">
         <JsonEditor onChange={handleJsonChange} />
-        {formSchema && <Form schema={formSchema} />}
+        {formSchema?.fields?.length && (formSchema?.fields?.length > 0) && <Form schema={formSchema} />}
     </div>
   )
 }

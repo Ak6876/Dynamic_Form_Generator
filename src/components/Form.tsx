@@ -93,9 +93,11 @@ const onSubmit = (data: any) => {
                     }`}
                 />
               )}
-              {field.type !== "textarea" &&
+              { field.type &&
+                field.type !== "textarea" &&
                 field.type !== "select" &&
-                field.type !== "checkbox" && (
+                field.type !== "checkbox" && 
+                field.id && (
                   <input
                     id={field.id}
                     type={field.type}
