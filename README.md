@@ -25,9 +25,9 @@ This repo contains the code for dynamic form generator build using React, Typesc
   - On submitting the form, the form data can be viewed in the console log.
 - Output
 
-  ![form generated](public\output.png)
+  ![form generated](public/output.png)
 
- > [!NOTE] 
+ > [!CAUTION] 
  > This website still lacks important validation, so it may not work as per your expectation.
 # React + TypeScript + Vite
 
