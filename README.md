@@ -29,6 +29,9 @@ This repo contains the code for dynamic form generator build using React, Typesc
 
  > [!CAUTION] 
  > This website still lacks important validation, so it may not work as per your expectation.
+
+Check the [live](https://dynamic-form-generator-nu-lemon.vercel.app/) website here.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
