@@ -14,7 +14,7 @@ const JsonEditor: React.FC<JsonEditorProps> = ({ onChange }) => {
 
   const validateJsonContainsField = (json: string): boolean => {
     try {
-      const parsedJson: typeof JsonSchema = JSON.parse(json);
+      const parsedJson: typeof JsonSchema = json && JSON.parse(json);
       return Object.entries(parsedJson).some(
         ([key, value]) => key.trim().length > 0 && value !== undefined && value !== null
       );
@@ -43,7 +43,7 @@ const JsonEditor: React.FC<JsonEditorProps> = ({ onChange }) => {
       if (isValid) {
         onChange(value, true);
       }else{
-        value && onChange( value, false );
+        (value || value?.length === 0) && onChange( value, false );
       }
   };
 

@@ -16,7 +16,7 @@ This repo contains the code for dynamic form generator build using React, Typesc
           "id":"2",
           "type": "input",
           "label": "Name",
-          "required":"true",
+          "required": true,
           "placeholder":"Enter Your Name" 
         }
       ]
@@ -32,7 +32,7 @@ This repo contains the code for dynamic form generator build using React, Typesc
 
 Check the [live](https://dynamic-form-generator-nu-lemon.vercel.app/) website here.
 
-# React + TypeScript + Vite
+<!-- # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -81,4 +81,4 @@ export default tseslint.config({
     ...react.configs['jsx-runtime'].rules,
   },
 })
-```
+``` -->
