@@ -1,3 +1,33 @@
+# Dynamic Form Generator
+This repo contains the code for dynamic form generator build using React, Typescript, Monaco-Editor, React Hook Form and Zod for validation. The website is still in development and lacks the validation and error states for JSON schema. use the following example to see the form generated dynamically:
+
+- JSON
+```json
+    {
+     "formTitle":"Form",
+     "fields":[
+        {
+          "id":"1",
+          "type": "select",
+          "label":"Location",
+          "options": ["country", "state", "city"]
+        },
+        {
+          "id":"2",
+          "type": "input",
+          "label": "Name",
+          "required":"true",
+          "placeholder":"Enter Your Name" 
+        }
+      ]
+    }
+```
+  - On submitting the form, the form data can be viewed in the console log.
+- Output
+
+  ![form generated](public\output.png)
+
+ `note: The webiste still lacks important validation, so it may not work as per your expectation.` 
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

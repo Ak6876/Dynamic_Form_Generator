@@ -43,16 +43,16 @@ const onSubmit = (data: any) => {
   return (
     <div className="container h-full">
       <header className="sticky w-full px-4 border-2 rounded-t-lg h-10 bg-gray-100 flex items-center z-20">
-        <a className="text-black base cursor-pointer" >Form</a>
+        <a className="base cursor-pointer" >Form</a>
       </header>
-      <main className=" overflow-hidden w-full shadow-4xl p-4">
+      <main className={`overflow-hidden w-full shadow-4xl p-4`}>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
 
-          <h2 className="text-xl font-bold">{schema.formTitle}</h2>
+          <h2 className="text-xl font-bold">{schema?.formTitle}</h2>
 
-          {schema.formDescription && <p>{schema.formDescription}</p>}
+          {schema.formDescription && <p>{schema?.formDescription}</p>}
 
-          {schema.fields.map((field) => (
+          {schema?.fields && schema?.fields.map((field) => (
             <div key={field.id} className="mb-4">
               <label htmlFor={field.id} className="block font-medium mb-1">
                 {field.label}
