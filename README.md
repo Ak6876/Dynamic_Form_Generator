@@ -27,7 +27,8 @@ This repo contains the code for dynamic form generator build using React, Typesc
 
   ![form generated](public\output.png)
 
- `note: The webiste still lacks important validation, so it may not work as per your expectation.` 
+ > [!NOTE] 
+ > This website still lacks important validation, so it may not work as per your expectation.
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
