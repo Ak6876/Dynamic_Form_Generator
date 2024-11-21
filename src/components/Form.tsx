@@ -41,9 +41,9 @@ const onSubmit = (data: any) => {
 };
 
   return (
-    <div className="container h-full">
+    <div className="container w-full lg:w-[50vw]">
       <header className="sticky w-full px-4 border-2 rounded-t-lg h-10 bg-gray-100 flex items-center z-20">
-        <a className="base cursor-pointer" >Form</a>
+        <a className="text-black-100 base cursor-pointer" >Form</a>
       </header>
       <main className={`overflow-hidden w-full shadow-4xl p-4`}>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">

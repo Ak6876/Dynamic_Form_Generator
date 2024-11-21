@@ -1,4 +1,4 @@
-type InputType = "text" | "email" | "number" | "textarea" | "checkbox" | "radio" | "select";
+type InputType = "text" | "email" | "number" | "textarea" | "checkbox" | "radio" | "select" | "input";
 
 interface FormField {
   id: string; 
