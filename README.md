@@ -1,5 +1,5 @@
-# Dynamic Form Generator
-This repo contains the code for dynamic form generator build using React, Typescript, Monaco-Editor, React Hook Form and Zod for validation. The website is still in development and lacks the validation and error states for JSON schema. use the following example to see the form generated dynamically:
+# JForm - Dynamic Form Generator
+This repo contains the code for dynamic form generator build using React, Typescript, Monaco-Editor, React Hook Form and Zod for validation. JForm is an powerful tool designed to seamlessly transform your JSON input into fully functional HTML forms in real-time. Use the following example to see the form generated dynamically:
 
 - JSON
 ```json
@@ -22,13 +22,13 @@ This repo contains the code for dynamic form generator build using React, Typesc
       ]
     }
 ```
-  - On submitting the form, the form data can be viewed in the console log.
+  - On submitting the form, the form data can be downloaded in your local drive.
 - Output
 
   ![form generated](public/output.png)
 
  > [!CAUTION] 
- > This website still lacks important validation, so it may not work as per your expectation.
+ > This website still lacks important features, so it may not meet your expectations.
 
 Check the [live](https://dynamic-form-generator-nu-lemon.vercel.app/) website here.
 
