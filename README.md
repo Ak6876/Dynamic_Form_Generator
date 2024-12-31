@@ -29,7 +29,7 @@ This repo contains the code for dynamic form generator build using React, Typesc
 
  > [!NOTE] 
  > This website still lacks important features, so it may not meet your expectations.
-
+ > Best Viewed on desktop PC or Laptop.
 Check the [live](https://dynamic-form-generator-nu-lemon.vercel.app/) website here.
 
 <!-- # React + TypeScript + Vite
