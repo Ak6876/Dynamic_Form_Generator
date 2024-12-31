@@ -27,7 +27,7 @@ This repo contains the code for dynamic form generator build using React, Typesc
 
   ![form generated](public/output.png)
 
- > [!CAUTION] 
+ > [!NOTE] 
  > This website still lacks important features, so it may not meet your expectations.
 
 Check the [live](https://dynamic-form-generator-nu-lemon.vercel.app/) website here.
