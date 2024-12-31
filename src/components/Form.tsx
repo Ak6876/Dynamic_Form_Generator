@@ -46,7 +46,21 @@ const Form: React.FC<FormProps> = ({ schema }) => {
   });
 
   const onSubmit = (data: any) => {
-    console.log("Form Data:", data);
+    const fileType = "json";
+    const fileName = `form_data.${fileType}`;
+    const fileContent = fileType === "json" ? JSON.stringify(data, null, 2) : "";
+
+    const blob = new Blob([fileContent], {
+      type:  "application/json",
+    });
+
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = fileName;
+    link.click();
+
+    URL.revokeObjectURL(link.href);
+
   };
 
   
@@ -130,8 +144,8 @@ const Form: React.FC<FormProps> = ({ schema }) => {
   };
 
   return (
-    <div className="min-h-screen w-full flex flex-col py-1 pr-1">
-      <header className="sticky w-full px-4 border-2 border-b-0 border-gray-400 rounded-t-lg h-10 bg-gray-100 flex items-center z-20">
+    <div className="min-h-screen relative lg:w-11/20 max-w-full flex flex-col py-1 pr-1">
+      <header className=" w-full px-4 border-2 border-b-0 border-gray-400 rounded-t-lg h-10 bg-gray-100 flex items-center z-20">
         <a className="text-black-100 base cursor-pointer" >Form</a>
       </header>
       <main className={` w-full h-full p-4 border-2 border-gray-400 rounded-md rounded-t-none border-t-0 overflow-y-auto`}>

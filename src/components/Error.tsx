@@ -17,7 +17,7 @@ const Error = ( ErrorLogs : ErrorProps) => {
             {Array.isArray(ErrorLogs.path) && 
               ErrorLogs.path.map((path, index) => {
               return path !== null && ( index === 0 ? <span key={index} className="text-white font-semibold">path: {path}</span> :
-                  index === 1 ? (<span key={index} className="text-white font-semibold ">at {path} index</span>) : index === 2 && <span key={index} className="text-white font-semibold">of type {path}</span>)
+                  index === 1 ? (<span key={index} className="text-white font-semibold ">at {path} index</span>) : index === 2 && <span key={index} className="text-white font-semibold">of type "{path}"</span>)
               })
             }
             </div>

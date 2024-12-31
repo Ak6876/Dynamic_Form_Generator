@@ -60,13 +60,9 @@ const JsonEditor: React.FC<JsonEditorProps> = ({ onChange, onErrorUpdate }) => {
       if (isValid) {
         onErrorUpdate(null);
         onChange(value, true);
-      }else{
-        onChange(value, false);
       }
-
     } catch (error) {
       if (error instanceof z.ZodError) {
-        console.error(error);
         onErrorUpdate({ type: "Validation Error", message: "JSON Schema Validation Errors, " + error.errors.map(e => e.message).join(", "), path: error.errors.flatMap((e) => e.path.map(String)), });
       } else {
         onErrorUpdate({ type: "Syntax Error", message: "Invalid JSON format or no fields found in JSON.", path: error instanceof Error ? error.message : null });
@@ -76,7 +72,7 @@ const JsonEditor: React.FC<JsonEditorProps> = ({ onChange, onErrorUpdate }) => {
   };
 
   return (
-    <div className="min-h-screen w-11/20 max-w-full flex flex-col py-1 px-2">
+    <div className="min-h-screen lg:w-11/20 max-w-full flex flex-col py-1 px-1">
       <header className="w-full px-4 border-2 border-b-0 border-gray-400 rounded-t-lg h-10 bg-gray-100 flex items-center">
         <p className="text-black base cursor-pointer" > Json Schema </p>
       </header>
